@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop watch</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="totalClock">
+      <div class="timerView">
+        <span id="hours">00</span>
+        <span id="minutes">00</span>
+        <span id="seconds">00</span>
+        <span id="millisecond">00</span>
+      </div>
+
+      <div class="buttons">
+        <button id="start" onclick="startTimer()">Start</button>
+        <button id="stop" onclick="pauseTimer()">Stop</button>
+        <button id="restart" onclick="resetTimer()">Restart</button>
+        <button id="lap" onclick="lapTimer()">Lap</button>
+      </div>
+
+      <div class="scoreContainer"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
